@@ -1,0 +1,108 @@
+/* Global Layout Set-up */
+* { 
+    box-sizing: border-box;
+}
+ 
+a {
+    text-decoration: none;
+    color: darkslategray;
+}
+
+p {
+    color: lightslategray;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace, 'Times New Roman', Times, serif;
+    margin: 10px 10px 0px 10px;
+    text-align: center;
+    background-color: rgb(248, 248, 248);
+    
+}
+
+h2 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    color: rgb(64, 64, 65);
+    padding-bottom: 50px;
+    display: block;
+    
+}
+
+h2 {
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 1.4em;
+    
+}
+
+.profile-image {
+    width: 70vw;
+}
+
+.introduction {
+    margin: 50px 35px;
+    font-size: 1.0em;
+    
+}
+
+.container3 {
+    background-color: white;
+    padding: 30px 0px;
+}
+
+h2 {
+    border: 3px solid white;
+    border-radius: 2px;
+    padding: 15px;
+    margin: 10px 10px;
+    font-size: 1.5em;
+    background-color: white;
+    
+}
+
+.name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 15px auto;
+    
+}
+
+.picture {
+    max-width: 90%
+    
+}
+
+.page {
+    margin-bottom: 50px;
+    font-size: 1em;
+    
+}
+
+.contact {
+    background-color:rgb(248, 248, 248);
+    margin: 0px 0px 20px 0px;
+    padding: 80px 20px 20px 20px;
+    
+    
+}
+
+.textbox {
+    padding: 0px 25px 0px 25px;
+}
+
+/* Flex Styles */
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+/* MEDIA QUERIES */
