@@ -22,7 +22,6 @@ body {
     
 }
 
-
 header {
     color: rgb(64, 64, 65);
     padding-bottom: 50px;
@@ -110,6 +109,10 @@ h2 {
     
 }
 
+.picture {
+    width: 90vw;
+    
+}
 
 .page {
     margin-bottom: 50px;
@@ -124,11 +127,6 @@ h2 {
     
     
 }
-
-
-
-
-
 
 .row1 {
     display: flex;
@@ -168,6 +166,12 @@ h2 {
     display: flex;
     justify-content: center;
 
+}
+
+.container3 {
+    background-color: purple;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .container4 {
