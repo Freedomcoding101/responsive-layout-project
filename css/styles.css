@@ -95,8 +95,7 @@ h1 {
 }
 
 .picture {
-    width: 90vw;
-    
+ 
 }
 
 .page {
@@ -128,10 +127,25 @@ h1 {
 .item1,
 .item2,
 .item3,
-.item4 {
+.item4,
+.image,
+.title,
+.textbox
+.page {
     display:flex;
 }
 
+.page {
+    justify-content: center;
+}
+
+.image {
+    
+}
+
+.title {
+    
+}
 
 .container1 {
     flex-direction: column;
@@ -146,6 +160,8 @@ h1 {
     background-color: purple;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
+    width: 100vw;
 }
 
 .container4 {
@@ -167,7 +183,6 @@ h1 {
 }
 
 .page{
-    flex: 1 20em;
     background-color: green;
 }
 
