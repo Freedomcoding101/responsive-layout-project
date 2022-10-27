@@ -20,12 +20,6 @@ body {
     
 }
 
-h2 {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    
-}
 
 header {
     color: rgb(64, 64, 65);
@@ -36,34 +30,61 @@ header {
 
 h2 {
     font-weight: bold;
-    margin-top: 30px;
-    font-size: 1.4em;
+    border: 3px solid ghostwhite;
+    border-radius: 2px;
+    padding: 15px;
+    margin: 4px 10px;
+    font-size: 1.1em;
+    background-color: white;
     
 }
 
+h1 {
+    color: rgb(64, 64, 65);
+    font-size: 1.2em
+}
+
+.item1-item {
+    font-size: 1.1em
+}
+
+.item2,
+.item3,
+.item4 {
+    margin: 8px;
+    padding: 8px;
+    flex: 1 10px;
+    justify-content: center;
+    font-weight: bold;
+}
+
+
+.item11 {
+    margin: 10px 20px;
+    font-weight: bolder;
+    color: rgb(64, 64, 65);
+    font-size: 1.1em;
+}
+
+.item10 {
+    margin: 10px 20px;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: rgb(64, 64, 65);
+}
+
 .profile-image {
-    width: 70vw;
+    width: 27em;
 }
 
 .introduction {
     margin: 50px 35px;
     font-size: 1.0em;
-    
 }
 
 .container3 {
     background-color: white;
     padding: 30px 0px;
-}
-
-h2 {
-    border: 3px solid white;
-    border-radius: 2px;
-    padding: 15px;
-    margin: 10px 10px;
-    font-size: 1.5em;
-    background-color: white;
-    
 }
 
 .name {
@@ -74,14 +95,14 @@ h2 {
 }
 
 .picture {
-    max-width: 90%
+    width: 90vw;
     
 }
 
 .page {
     margin-bottom: 50px;
     font-size: 1em;
-    
+    color: rgb(64, 64, 65);
 }
 
 .contact {
@@ -96,13 +117,88 @@ h2 {
     padding: 0px 25px 0px 25px;
 }
 
+
 /* Flex Styles */
 
+.container1,
+.container2,
+.container3,
+.container4,
+.container5, 
+.item1,
+.item2,
+.item3,
+.item4 {
+    display:flex;
+}
+
+
 .container1 {
-    display: flex;
-    justify-content: center;
     flex-direction: column;
-    
+}
+
+.container2 {
+    justify-content: center;
+
+}
+
+.container3 {
+    background-color: purple;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.container4 {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container5 {
+    flex-direction: column;
+}
+
+.profile-picture {
+    order: 1;
+}
+
+.introduction {
+    order: 2;
+}
+
+.page{
+    flex: 1 20em;
+    background-color: green;
 }
 
 /* MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+
+
+.container1 {
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.item2,
+.item3,
+.item4 {
+    flex-grow: 0;
+    margin: 0px 20px;
+}
+
+.container5 {
+    flex-direction: row;
+}
+
+.profile-picture {
+    order: 2;
+    align-self: center;
+}
+
+.introduction {
+    order:1;
+}
+}
