@@ -1,6 +1,8 @@
 /* Global Layout Set-up */
 * { 
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
  
 a {
@@ -44,6 +46,11 @@ h1 {
     font-size: 1.2em
 }
 
+.picture {
+    max-width: 80vw;
+    margin: 20px 0;
+}
+
 .item1-item {
     font-size: 1.1em
 }
@@ -57,7 +64,6 @@ h1 {
     justify-content: center;
     font-weight: bold;
 }
-
 
 .item11 {
     margin: 10px 20px;
@@ -87,6 +93,16 @@ h1 {
     padding: 30px 0px;
 }
 
+h2 {
+    border: 3px solid white;
+    border-radius: 2px;
+    padding: 15px;
+    margin: 10px 10px;
+    font-size: 1.5em;
+    background-color: white;
+    
+}
+
 .name {
     font-size: 2.5rem;
     font-weight: bold;
@@ -94,9 +110,6 @@ h1 {
     
 }
 
-.picture {
- 
-}
 
 .page {
     margin-bottom: 50px;
@@ -146,47 +159,15 @@ h1 {
 .item1,
 .item2,
 .item3,
-.item4,
-.image,
-.title,
-.textbox
-.page {
+.item4 {
     display:flex;
 }
 
-.page {
-    justify-content: center;
-}
 
-.image {
-    
-}
-
-.title {
-    align-self: center;
-    font-size: 1.2em;
-    font-weight: bold;
-    margin: 20px 0;
-}
-
-.textbox {
-    font-size: 1em;
-}
 .container1 {
-    flex-direction: column;
-}
-
-.container2 {
+    display: flex;
     justify-content: center;
 
-}
-
-.container3 {
-    background-color: green;
-    gap: 10px;
-    flex-direction: column;
-    justify-content: center;
-    width: 100vw;
 }
 
 .container4 {
@@ -207,18 +188,24 @@ h1 {
     order: 2;
 }
 
-.page{
-    background-color: green;
-}
-
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 768px) {
 
+.container3,
+.container6,
+.container7 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    
+}
 
 .container1 {
     flex-direction: row;
     justify-content: center;
+    
     
 }
 
